@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .home{
+            background: rgb(0, 0, 0);
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .menu_div{
+            background: transparent;
+            
+        }
+        .logo{
+            color: rgb(255, 255, 255);
+            text-transform: capitalize;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 100px;
+            line-height: 80px;
+            padding: 0 100px;
+        }
+        .logo span{
+            color: rgb(207, 42, 42);
+        }
+        .menu_ul{
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+            list-style: none;
+            height: 80px;
+
+            background: rgb(32, 31, 31);
+            box-shadow: -5px 5px 5px #000;
+        }
+        .menu_ul li{
+
+            float: right;
+            margin-right: 30px ;
+            padding-top: 32px;
+        }
+        .menu_ul li a{
+
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: rgb(255, 255, 255);
+        }
+        .menu_ul li a:hover{
+            color: rgb(207, 42, 42);
+        }
+        .home_speech{
+            position: absolute;
+            top: 250px;
+            right: 250px;
+        }
+        .home_speech_one{
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+        }
+        .home_speech_two{
+            color: rgb(146, 40, 40);
+            font-size: 46px;
+            margin-top: 10px;
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate {
+
+            0%{
+                color: rgb(29, 150, 206);
+            }
+            25%{
+                color: rgb(40, 202, 67);
+            }
+            50%{
+                color: rgb(154, 29, 192);
+            }
+            75%{
+                color: rgb(145, 158, 25);
+            }
+            100%{
+                color: rgb(40, 121, 146);
+            }
+            
+        }
+        .home_speech_three{
+            color: rgb(255, 255, 255);
+            font-size: 36px;
+            margin-top: 15px;
+        }
+        .home_speech_button{
+            background: rgb(207, 42, 42);
+            padding: 15px 30px 15px 30px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            transition: .5s;
+            
+        }
+ 
+        .home_speech_button:hover{
+            background: rgb(23, 93, 173);
+        }
+
+        .home_img{
+            position: absolute;
+            top: 50px;
+            left: -35px;
+
+        }
+        /* -------------about section css-----------*/
+        .about{
+            height: 75vh;
+            width: 100%;
+            background: #fff;
+            }
+
+        .about_heading{
+            text-align: center;
+            margin-top: 70px;
+            font-size: 56px;
+
+        }
+        .about_pera{
+            text-align: center;
+            font-size: 18px;
+        }
+        .about_image{
+            margin-top: 90px;
+            position: absolute;
+            left: 150px;
+        }
+        .about_peragraph{
+            height: 300px;
+            width: 500px;
+            float: right;
+            margin-top: 90px;
+            position: absolute;
+            right: 150px;
+            font-size: 20px;
+        }
+        h4{
+            font-size: 26px;
+            
+        }
+        .about_pera_lg{
+            font-size: 60px;
+            color: rgb(207, 42, 42);
+        }
+        .about_speech_button{
+            background: rgb(207, 42, 42);
+            padding: 15px 30px 15px 30px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            transition: .5s;
+            
+            
+        }
+        .about_speech_button:hover{
+            background: rgb(23, 93, 173);
+        }
+        .button_animation{
+            position: absolute;
+            top: 242px;
+            left: 200px;
+            animation: buttonanimate 5s linear infinite;
+        }
+        @keyframes buttonanimate{
+            0%{
+                position: absolute;
+            top: 242px;
+            left: 200px;
+            }
+            50%{
+                position: absolute;
+            top: 242px;
+            left: 250px;
+            }
+            100%{
+                position: absolute;
+            top: 242px;
+            left: 200px;
+            }
+        }
+        .fas{
+            font-size: 56px;
+            color: rgb(207, 42, 42);
+        }
+
+        /* -------------service section css-----------*/
+ 
+        .service{
+            height: 90vh;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            }
+            .service_heading{
+            text-align: center;
+            margin-top: 60px;
+            font-size: 56px;
+            padding-top: 50px;
+            color: #fff;
+
+        }
+        .service_pera{
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+        }
+        .box_one{
+            height: 300px;
+            width: 300px;
+            background: rgb(58, 58, 55);
+            margin-top: 50px;
+            position: absolute;
+            left: 120px;
+            color: #fff;
+            transition: 1s;
+        }
+        .box_one:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px #fff;
+        }
+        .box_two{
+            height: 300px;
+            width: 300px;
+            background: rgb(58, 58, 55);
+            margin-top: 50px;
+            position: absolute;
+            left: 520px;
+            color: #fff;
+            transition: 1s;
+        }
+        .box_two:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px #fff;
+        }
+        .box_three{
+            height: 300px;
+            width: 300px;
+            background: rgb(58, 58, 55);
+            margin-top: 50px;
+            position: absolute;
+            left: 920px;
+            color: #fff;
+            transition: 1s;
+        }
+        .box_three:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px #fff;
+        }
+        .icon_box{
+            
+            font-size: 36px!important;
+            color: rgb(207, 42, 42);
+            
+            width: 70px!important;
+            border: 3px solid rgb(207, 42, 42);
+            border-radius: 50%;
+            padding-top: 15px;
+        }
+        .fasv{
+            font-size: 56px!important;
+            color: rgb(207, 42, 42);
+        }
+        .icon{
+            text-align: center;
+            padding-top: 35px;
+           
+        }
+        .icon_head{
+            text-align: center;
+            padding-top: 10px;
+        }
+        .icon_pera{
+            text-align: center;
+            padding-top: 10px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        /* -------------skill section css-----------*/
+        .skill{
+            height: 70vh;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            }
+            .skill_heading{
+            text-align: center;
+            margin-top: 60px;
+            font-size: 56px;
+            
+
+        }
+        .skill_pera{
+            text-align: center;
+            font-size: 18px;
+        }
+        .skill_content{
+            height: 300px;
+            width: 500px;
+            
+            margin-top: 50px;
+            position: absolute;
+            left: 100px;
+        }
+        .skill_form{
+            height: 300px;
+            width: 500px;
+            
+            margin-top: 50px;
+            position: absolute;
+            right: 100px;
+        }
+
+        .skill_pera_lg{
+            font-size: 60px;
+            color: rgb(207, 42, 42);
+        }
+        .skill_speech_button{
+            background: rgb(207, 42, 42);
+            padding: 15px 30px 15px 30px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            transition: .5s;
+            
+            
+        }
+        .skill_speech_button:hover{
+            background: rgb(23, 93, 173);
+        }
+        .skill_button_animation{
+            position: absolute;
+            top: 242px;
+            left: 200px;
+            animation: buttonanimate 5s linear infinite;
+        }
+        @keyframes buttonanimate{
+            0%{
+                position: absolute;
+            top: 242px;
+            left: 200px;
+            }
+            50%{
+                position: absolute;
+            top: 242px;
+            left: 250px;
+            }
+            100%{
+                position: absolute;
+            top: 242px;
+            left: 200px;
+            }
+        }
+        .skill_fas{
+            font-size: 56px;
+            color: rgb(207, 42, 42);
+        }
+        .s_pera{
+            font-size: 20px;
+        }
+ /* -------------contact section css-----------*/
+        .contact{
+            height: 90vh;
+            width: 100%;
+            background: rgb(206, 204, 204);
+            }
+            .contact_heading{
+            text-align: center;
+            margin-top: 60px;
+            font-size: 56px;
+            
+
+        }
+
+ 
+        .contact_pera{
+            text-align: center;
+            font-size: 18px;
+        }
+        .contact_content{
+            height: 400px;
+            width: 500px;
+       
+            margin-top: 50px;
+            position: absolute;
+            left: 150px;
+        }
+        .contact_content_base{
+            text-align: center;
+            
+        }
+        .contact_content_base_h2{
+            color: rgb(207, 42, 42);;
+        }
+        .contact_form{
+            height: 400px;
+            width: 500px;
+            
+            margin-top: 50px;
+            position: absolute;
+            right: 100px;
+        }
+        label{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        input{
+            height: 40px;
+            width: 400px;
+            border-radius: 10px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        textarea{
+            height: 100px;
+            width: 400px;
+            border-radius: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+        footer{
+            height: 40px;
+            width: 100%;
+            background: #000;
+                }
+                .footer_head{
+                    text-align: center;
+                    color: #fff;
+                }
+    </style>
+</head>
+<body>
+    <!------------------Home Section-------------------->
+    <div class="home" id="home">
+      <div class="menu_div">
+          
+        <ul class="menu_ul">
+            <label class="logo">Port<span>folio..</span></label>
+            
+
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li>
+
+        </ul>
+        <div class="home_speech">
+            <h3 class="home_speech_one">Hello, my name is</h3>
+            <h1 class="home_speech_two">Md. Rafiul Islam Nadeem</h1>
+            <h3 class="home_speech_three">I am a web developer</h3>
+            <Button class="home_speech_button">Click Here</Button>
+        </div>
+        <div class="home_img">
+            <img src="nadeem-removebg-preview.png" height="607" width="600" >
+        </div>
+    </div>
+</div>
+
+    <!------------------About Section-------------------->
+
+    <div class="about" id="about">
+        <h1 class="about_heading">About Me</h1>
+        <h6 class="about_pera">--who am i--</h6>
+        <div class="about_image">
+            <img src="nadeem2.jpg" height="300" width="300">
+        </div>
+
+        <div class="about_peragraph">
+            <p><span class="about_pera_lg">M</span>y name is Md Rafiul Islam Nadeem.</p>
+            <p>I am a student of Daffodil International University. I prepare myself as a web developer. I was working about 2 years to create website. I also made many blog website,portfolio website,and also make business website. i like to create website.This is  my passion</p>
+            <button class="about_speech_button">Download CV</button>
+            <div class="button_animation">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </div>
+        </div>
+    </div>
+
+    <!------------------service Section-------------------->
+
+    <div class="service" id="service">
+        <h1 class="service_heading">My Service</h1>
+        <h6 class="service_pera">--what i provide--</h6>
+        <div class="box_one">
+            <div class="icon"><i class="fas fa-pencil-alt icon_box fasv"></i></div>
+            <h2 class="icon_head">Web Design</h2>
+            <p class="icon_pera">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development</p>
+        </div>
+        <div class="box_two">
+            <div class="icon"><i class="fas fa-pencil-alt icon_box fasv"></i></div>
+            <h2 class="icon_head">Web Develop</h2>
+            <p class="icon_pera">A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. A web content management system is often used to develop and maintain web applications.</p>
+        </div>
+        <div class="box_three">
+            <div class="icon"><i class="fas fa-pencil-alt icon_box fasv"></i></div>
+            <h2 class="icon_head">SEO</h2>
+            <p class="icon_pera">SEO stands for Search Engine Optimization, which is the practice of increasing the quantity and quality of traffic to your website through organic search engine</p>
+        </div>
+    </div>
+
+      <!------------------skill Section-------------------->
+      <div class="skill" id="skill">
+        <h1 class="skill_heading">My Skills</h1>
+        <h6 class="skill_pera">--what i know--</h6>
+        <div class="skill_content">
+            
+                <p class="s_pera"><span class="skill_pera_lg">M</span>y name is Md Rafiul Islam Nadeem.</p>
+                <p class="s_pera">I am a student of Daffodil International University. I prepare myself as a web developer. I was working about 2 years to create website. I also made many blog website,portfolio website,and also make business website. i like to create website.This is  my passion</p>
+                <button class="skill_speech_button">Download CV</button>
+                <div class="skill_button_animation">
+                    <i class="fas fa-long-arrow-alt-left skill_fas"></i>
+                </div>
+            
+        </div>
+
+        <div class="skill_form">
+
+            <p class="skill_line">
+                <img src="p3.PNG" height="300" width="500">
+            </p>
+        </div>
+      </div>
+
+            <!------------------contact Section-------------------->
+            <div class="contact" id="contact">
+                <h1 class="contact_heading">Contact Me</h1>
+                <h6 class="contact_pera">--get in touch--</h6>
+                <div class="contact_content">
+                    <label class="contact_content_base">Name</label><br>
+                    <h2 class="contact_content_base_h2">Md. Rafiul Islam Nadeem</h2><br>
+                    <label class="contact_content_base">Address</label><br>
+                    <h2 class="contact_content_base_h2">Rupnagar,abashik,Mirpur-2</h2><br>
+                    <label class="contact_content_base">Email</label><br>
+                    <h2 class="contact_content_base_h2">Rafiul15-11452@ediu.edu.bd</h2><br>
+                    <label class="contact_content_base">Phone Number</label><br>
+                    <h2 class="contact_content_base_h2">01792707389</h2>
+                </div>
+        
+                <div class="contact_form">
+                    <form>
+                        <label>Name:</label><br>
+                        <input type="text" placeholder="enter your name">
+                        <br>
+                        <label>Email:</label><br>
+                        <input type="email" placeholder="enter your email">
+                        <br>
+                        <label>Phone Number:</label><br>
+                        <input type="number" placeholder="enter your phone number">
+                        <br>
+                        <label>Comment:</label><br>
+                        <textarea rows="5" cols="30" placeholder="Write something...."></textarea>
+                        <button  class="home_speech_button">Submit</button>
+                    </form>
+                </div>
+              </div>
+
+              <footer>
+                  <h2 class="footer_head">powerd by md rafiul islam nadeem</h2>
+              </footer>
+</body>
+</html>
